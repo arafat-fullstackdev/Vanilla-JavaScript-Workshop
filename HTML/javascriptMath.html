@@ -10,6 +10,22 @@
     <h2>Math Function</h2>
 
     <p id="code"></p>
+    <h3>break</h3>
+
+    <p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+    <p id="round"></p>
+
+    <p>Math.trunc(x) returns the integer part of x:</p>
+    <p id="trunc"></p>
+
+    <p>Math.ceil(x) returns the value of x rounded up to its nearest integer:</p>
+    <p id="ceil"></p>
+
+    <p>Math.floor(x) returns the value of x rounded down to its nearest integer:</p>
+    <p id="floor"></p>
+
+    <p>Math.sign(x) returns if x is negative, null or positive:</p>
+    <p id="sign"></p>
 
     <script>
       document.getElementById("code").innerHTML =
@@ -37,6 +53,13 @@
         "<p><b>Math.LOG10E:</b> " +
         Math.LOG10E +
         "</p>";
+    </script>
+    <script>
+        document.getElementById("round").innerHTML= Math.round(5.6);
+        document.getElementById("trunc").innerHTML= Math.trunc(5.6);
+        document.getElementById("ceil").innerHTML= Math.ceil(5.6);
+        document.getElementById("floor").innerHTML= Math.floor(5.6);
+        document.getElementById("sign").innerHTML= Math.sign(5.6);
     </script>
   </body>
 </html>
