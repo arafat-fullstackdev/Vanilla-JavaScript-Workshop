@@ -2,6 +2,7 @@ function createCounter() {
     let count = 0;
 
     return {
+        //three method from createCounter increment ,decrement and getCount
         increment: function(){
             count++;
             console.log('present count:', count);
