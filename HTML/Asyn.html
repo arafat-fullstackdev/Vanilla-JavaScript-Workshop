@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyn return</title>
+</head>
+<body>
+    <h1>Aynchronous JS</h1>
+    <h3 id="code"></h3>
+
+    <script>
+       
+        function myDisplay(some){
+            document.getElementById('code').innerHTML = some;
+        }
+async function myFunction() {
+      return 'Hello Asyn.';
+} 
+  myFunction().then(
+    function(value) {
+        myDisplay(value);
+    }
+  );
+</script>
+</body>
+</html>
