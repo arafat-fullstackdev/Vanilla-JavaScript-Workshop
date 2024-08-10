@@ -1,22 +1,24 @@
-async function letDelayGreetings(){
-   let greetingPromise = new Promise(function(resolve, reject){
-    let success = true;
+async function letDelayGreeting() {
+    let greetingPromise = new Promise(function(resolve, reject){
 
-    setTimeout(function(){
-        if(success){
-            console.log("Hello, MeteVerse!");
-        }else{
-            console.log('Greeting failed!');
-        }
-    }, 3000); // 3 seconds delay
-   });
+        let success = true // boolean
 
-   try{
-    let greeting = await greetingPromise;
-    console.log(greeting);
-   } catch (error){
-     console.log(error);
-   }
+        setTimeout(function(){
+            if(success){
+                resolve('Greeting from MetaVerse!');
+            }else{
+                reject('Stay connected us!');
+            }
+        }, 4000);
+    });
+
+    try{
+        let welcome = await greetingPromise;
+        console.log(welcome);
+    } catch (error) {
+        console.log(error);
+    }
+    
 }
 
-letDelayGreetings();
+letDelayGreeting();
