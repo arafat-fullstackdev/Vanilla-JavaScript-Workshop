@@ -1,12 +1,15 @@
 let promise = new Promise(function(res, rej) {
-    const a = 'GreeksForGreeks';
-    const b = 'GreeksForGreeks';
-
-    if(a == b){
-        res();
-    }else{
-        rej();
-    }
+    setTimeout(function(){
+        const a = 'GreeksForGreeks';
+        const b = 'GreeksForGreeks';
+    
+        if(a == b){
+            res();
+        }else{
+            rej();
+        }
+    }, 5000);
+ 
 });
 
 promise.then(function() {
