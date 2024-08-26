@@ -9,6 +9,6 @@ function onLoad() {
 onLoad();
 
 function windowWrite() {
-  document.write("web application");
+  document.write("Web Application Developer");
 }
 windowWrite();
