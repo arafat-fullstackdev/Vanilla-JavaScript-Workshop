@@ -8,11 +8,16 @@
   <body>
     <h1>Js Obj Methods!</h1>
     <script>
-      const obj1 = {};
+      //object
+      //seal()
+      // freeze()
+      const obj1 = {
+        name: "abc",
+      };
 
-      const obj2 = {};
-
-      console.log(Object.is(obj1()));
+      const obj2 = Object.seal(obj1);
+      (obj2.name = "deg"), console.log(obj2.name);
+      console.log(Object.isSealed(obj2));
     </script>
   </body>
 </html>
