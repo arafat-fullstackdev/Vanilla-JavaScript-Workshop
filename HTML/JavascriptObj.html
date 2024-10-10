@@ -16,7 +16,9 @@
       };
 
       const obj2 = Object.seal(obj1);
-      (obj2.name = "deg"), console.log(obj2.name);
+      obj2.name = "deg",
+      
+      console.log(obj2.name);
       console.log(Object.isSealed(obj2));
     </script>
   </body>
