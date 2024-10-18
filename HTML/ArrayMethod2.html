@@ -7,17 +7,20 @@
   </head>
   <body>
     <script>
-      document.writeln("JS Array Method 2");
       var programme = ["C", "C++", "Java"];
       var reset = programme.fill("JavaScript");
-      const reset2 = programme.fill("JavaScript", 1);
 
       document.writeln("Reset Code: " + reset);
-      document.writeln("<br>");
 
       document.writeln("<br>");
+      //var reset2 = programme.fill("JavaScript", 1);
+      programme.fill("JS", 1);
 
-      document.writeln("Reset Code fill(): " + reset2);
+      document.writeln("Reset Code fill(): " + programme.join());
+      document.writeln("<br>");
+      programme.fill("JAVA", 2);
+
+      document.writeln("Reset Code fill(): " + programme.join());
     </script>
   </body>
 </html>
