@@ -15,13 +15,14 @@ let modify = {
 person1.age = modify.age;
 // console.log(person1);
 // console.log(person); 
-const funObj = (aunAge)=> {
-    funObj.age += 1;
+const funObj = (runAge)=> {
+    runAge.age += 1;
 }
 const Ponting = {
     name: 'Ricky',
     age: 11
 }
+
 console.log('before', Ponting);
 funObj(Ponting);
 console.log('after', Ponting);
