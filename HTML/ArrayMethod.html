@@ -8,12 +8,33 @@
   <body>
     <script type="text/JavaScript">
 
-      var concat1 = ["C", "C++", "Competitive Programmer"];
-      document.writeln("<br>");
-      var concat2 = ["HTML", "CSS", "JavaScript", "Software Developer"];
-      var concatArray = concat1.concat(concat2);
+      const cart = [
+       {name:'Laptop', price:2000, qtv:1},
+       {name:'Iphone', price:500, qtv:2},
+       {name:'TV', price:1200, qtv:1},
+       {name:'Headphone', price:300, qtv:4},
+      ];
 
-      document.writeln(concatArray);
+      //sum of all elements
+      let totalCost = 0;
+      cart.forEach((element) => {
+       totalCost += element.price * element.qtv;
+      });
+      console.log(totalCost);
+
+      //All product name
+      let productName = [];
+      cart.forEach((element) => {
+         productName.push(element.name);
+      });
+      console.log(productName);
+
+      let totalElement = 0;
+      cart.forEach((element) =>{
+        totalElement +=  element.qtv;
+      });
+
+      console.log(totalElement);
     </script>
   </body>
 </html>
