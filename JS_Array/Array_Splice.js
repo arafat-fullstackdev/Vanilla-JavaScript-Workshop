@@ -65,4 +65,59 @@ const moveIndex = playList.findIndex((song) => song.id === 's1');
   playList.splice(1, 0, newSong);
   console.log(playList);
 
+  // Student array 
+   const studentArray = [
+    {name:'Alice', id:1, grade:'A'},
+    {name:'Mlice', id:2, grade:'A+'},
+    {name:'Nlice', id:3, grade:'A'},
+   ];
 
+   const gradeupdate = [{ grade: 'A+'},{grade:'A'}];
+
+   const updateStudent = studentArray.map((student, index) => {
+    return Object.assign({}, student, gradeupdate[index]);
+   });
+
+   console.log(updateStudent);
+
+const developerArray = [
+  {name:'Alank', id:1, role:'Engineer'},
+  {name:'Blank', id:2, role:'Developer'},
+  {name:'Clank', id:3, role:'Designer'},
+  {name:'Dlank', id:4, role:'Engineer'},
+];
+
+const developerUpdate = [{role: 'Devops'}, {role:'MLE'}];
+const updateDeveloper = developerArray.map((programmer, index) =>{
+       return Object.assign({}, programmer, developerUpdate[index]);
+});
+console.log(updateDeveloper);
+
+const droneHive = [
+    {name:'Orion', Domain:'Russia', gen:'5'},
+    {name:'Shahed', Domain:'Iran', gen:'4'},
+    {name:'Eagle', Domain:'USA', gen:'5'},
+    {name:'BlackCat', Domain:'Turkey', gen:'4'},
+];
+
+//include new obj
+const updateDrone =[{name:'AlKuds'}, {name:'Vostock'}];
+const updateDroneAdd = droneHive.map((pilot, index) => {
+  return Object.assign({}, pilot,updateDrone[index]);
+});
+
+console.log(updateDroneAdd);
+ 
+
+const missileRank = [
+  {name:'Shahine', Range:'1000', specialty: 'Stealth'},
+  {name:'Iskander', Range:'1500', specialty: 'Satellite'},
+  {name:'Mark', Range:'1300', specialty: 'Stealth'},
+];
+
+const specialUpdate =[{specialty:'sixthCore'}];
+const addCode= missileHive.map((code, index) =>{
+  return Object.assign({}, code, specialUpdate[index]);
+});
+
+console.log(addCode);
