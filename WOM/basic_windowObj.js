@@ -23,4 +23,9 @@ const productcart = document.querySelectorAll('.nodeMone');
 console.log(productcart);
 productcart.forEach((el) => {
     console.log(el);
-})
+});
+
+const productDemo = document.querySelectorAll('.todeMone');
+productDemo.forEach((gl) => {
+    console.log(gl);
+});
