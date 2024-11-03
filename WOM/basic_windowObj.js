@@ -15,5 +15,9 @@
 
 //* query selector*//
 
-const laptopEl = document.querySelector("[data-rating='4.7']");
-console.log(laptopEl);
+// const laptopEl = document.querySelector("[data-rating='4.7']");
+// console.log(laptopEl); 
+// const productcart = document.querySelectorAll('.productCart');
+// console.log(productcart); 
+const productcart = document.querySelectorAll('.nodeMone');
+console.log(productcart);
