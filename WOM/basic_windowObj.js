@@ -21,3 +21,6 @@
 // console.log(productcart); 
 const productcart = document.querySelectorAll('.nodeMone');
 console.log(productcart);
+productcart.forEach((el) => {
+    console.log(el);
+})
