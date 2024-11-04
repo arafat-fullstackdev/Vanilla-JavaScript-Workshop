@@ -19,13 +19,17 @@
 // console.log(laptopEl); 
 // const productcart = document.querySelectorAll('.productCart');
 // console.log(productcart); 
-const productcart = document.querySelectorAll('.nodeMone');
-console.log(productcart);
-productcart.forEach((el) => {
-    console.log(el);
-});
+// const productcart = document.querySelectorAll('.nodeMone');
+// console.log(productcart);
+// productcart.forEach((el) => {
+//     console.log(el);
+// });
 
 const productDemo = document.querySelectorAll('.todeMone');
 productDemo.forEach((gl) => {
     console.log(gl);
+});
+const convertNode = document.querySelectorAll('#nodeCode');
+convertNode.children.forEach((node) => {
+    console.log(node.nodeType);
 });
