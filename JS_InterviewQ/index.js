@@ -9,10 +9,18 @@
 // console.log(singleString);
 // let doubleString = ('Nice to meet you!');
 // console.log(doubleString);
-// let bactickString = (`Hello Coder!`);
-// console.log(bactickString);
+// let backtickString = (`Hello Coder!`);
+// console.log(backtickString);
 // let stringObj = new String('Aljazeera news from Doha');
 // console.log(stringObj);
 
 //? this questions from Greeks //
- console.log("Hi there i am from Second Space\n i  will teach you Algorithem");
+ console.log("Hi there i am from Second Space\n i  will teach you Algorithm");
+
+ let car = {
+    name: 'Dunlop',
+    type: 'electric',
+    speed: 45,
+    price:3300
+ }
+ console.log(car.type);
