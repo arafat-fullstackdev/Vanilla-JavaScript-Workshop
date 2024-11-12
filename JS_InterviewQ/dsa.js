@@ -20,3 +20,4 @@ function sortArray(arr){
     }
     return result;
 }
+console.log(sortArray(['-7','-6','5','2']));
