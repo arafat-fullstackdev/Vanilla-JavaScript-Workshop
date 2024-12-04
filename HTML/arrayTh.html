@@ -7,8 +7,15 @@
   </head>
   <body>
     <script>
+      //* Array Methods
+      // sort()
+      // map()
+      // each()
       let arr = ["C", "C++", "JS", "PHP"];
       document.writeln("to check has value:" + arr.includes("JAVA"));
+      document.writeln("<br/>");
+
+      document.writeln("to check has value:" + arr.join(3, "Flutter"));
       document.writeln("<br/>");
       //   index of value()
       // indexOf() => 1 == 1
@@ -16,6 +23,10 @@
       document.writeln("to check has value:" + arr.indexOf("JS"));
       document.writeln("<br/>");
       document.writeln("to check has value:" + arr.indexOf("Python"));
+      // is isArray()
+      document.writeln("Is Array or not :" + Array.isArray(arr));
+      document.writeln("<br>");
+      //   document.writeln("Is Array or not :" + Array.isArray(1, 2, 3, 4));
     </script>
   </body>
 </html>
