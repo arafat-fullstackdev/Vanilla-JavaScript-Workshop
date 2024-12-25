@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Array Methods</title>
+  </head>
+  <body>
+    <script>
+      // JS Array Methods
+      // Concat()
+      //Copywithin()
+      //Entries;
+      //every();
+      // flat();
+      //flatMap();
+
+      const OPP = ["C", "C++", "Java", "Python"];
+      const Android = ["Dart", "Flature", "C#"];
+      const arr3 = [11, 22, 33, [44, 55]];
+
+      document.writeln("<h2>JS Concat():</h2>");
+      const ConcatArray = OPP.concat(Android);
+      document.writeln("JS Concat Methods: " + ConcatArray);
+
+      document.writeln("<h2>copyWithin():</h2>");
+      const Copywithin = Android.copyWithin(0, 1, 2);
+      document.writeln("JS CopyWithin Methods: " + Copywithin);
+
+      document.writeln("<h2>every():</h2>");
+      const entries = Android.entries();
+      for (value of entries) {
+        document.writeln(value + "<br>");
+      }
+
+      document.writeln("<h2>entries();</h2>");
+
+      document.writeln("<h2>flat():</h2>");
+      const flatArray = arr3.flat();
+      document.writeln("Flat Array: " + flatArray);
+
+      document.writeln("<h2>flatMap():</h2>");
+    </script>
+  </body>
+</html>

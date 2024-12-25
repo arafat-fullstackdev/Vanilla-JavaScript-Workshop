@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Method</title>
+</head>
+<body>
+    <h1>JavaScript  String Method</h1>
+    <h2 id="string"></h2>
+    <h2 id="btring"></h2>
+    <h2 id="ctring"></h2>
+    <h2 id="slice"></h2>
+
+    <script>
+        let name = "JavaScript";
+        document.getElementById("string").innerHTML = name[2];
+        let find = name.at(4);
+        document.getElementById("btring").innerHTML = find;
+        //The charCodeAt() method returns the unicode
+        // of the character at a given position in a string:
+
+        const code = 'CodeBase For Developer';
+        document.getElementById("ctring").innerHTML = code.charCodeAt(0);
+        document.getElementById("slice").innerHTML = code.slice(-5);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+
+    <title>JavaScript Event Handler</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript HTML event</h1>
+      <h1>JavaScript onclick event</h1>
+      <h3>Click the button to display the date</h3>
+      <p id="dateof"></p>
+
+      <button onclick="DisplayDate()">On Time</button>
+    </div>
+
+    <!-- Vanilla JS -->
+    <script>
+      function DisplayDate() {
+        document.getElementById("dateof").innerHTML = Date();
+      }
+    </script>
+  </body>
+</html>

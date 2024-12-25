@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary  Operator</title>
+</head>
+<body>
+    <h1>Ternary  Operator Uses</h1>
+    <h2 id="operator"></h2>
+
+    <script>
+        function renderApp() {
+            document.getElementById("operator").innerHTML = "Welcome JS planet";
+        } 
+
+        function renderLogin() {
+            document.getElementById("operator").innerHTML = "Please Login";
+        }
+
+        let Authenticated = true;
+        if (Authenticated) {
+            renderApp();
+        } else{
+            renderLogin();
+        }
+    </script>
+    
+</body>
+</html>

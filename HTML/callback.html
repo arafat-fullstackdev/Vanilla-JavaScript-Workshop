@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Call function</title>
+  </head>
+  <body>
+    <h1>JavaScript Callback Function</h1>
+    <p>The result is:</p>
+    <p id="call"></p>
+    <h2 id="time"></h2>
+    <p>let's show time</p>
+
+    <script>
+      function myCallBack(some) {
+        document.getElementById("call").innerHTML = some;
+      }
+      function result(num1, num2, defineResult) {
+        let calculate = num1 + num2;
+        defineResult(calculate);
+      }
+
+      Result(12, 12, myCallBack);
+    </script>
+
+    <script>
+         setTimeout(myTime, 4000);
+
+      function myTime(){
+          document.getElementById("time").innerHTML = 'We are the developer';
+      }
+    </script>
+  </body>
+</html>

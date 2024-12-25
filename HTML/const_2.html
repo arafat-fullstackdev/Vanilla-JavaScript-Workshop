@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor Function</h1>
+    <h3 id="code"></h3>
+
+    <script>
+        function Person(rank,bank,jank){
+            this.rankbase=rank;
+            this.bankbase=bank;
+            this.net=jank;
+
+        }
+        //create two person obj
+        const  construct = new Person('homeland','nlq','ssp');
+        const  constructTwo = new Person('homeland','nlq','ssp');
+
+        document.getElementById('code').innerHTML='My employe is' + construct.rank + 
+        '.My second is' + constructTwo.jank + '.';
+    </script>
+</body>
+</html>

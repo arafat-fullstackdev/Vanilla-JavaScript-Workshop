@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Method 2</title>
+  </head>
+  <body>
+    <script>
+      var programme = ["C", "C++", "Java"];
+      var reset = programme.fill("JavaScript");
+
+      document.writeln("Reset Code: " + reset);
+
+      document.writeln("<br>");
+      //var reset2 = programme.fill("JavaScript", 1);
+      programme.fill("JS", 1);
+
+      document.writeln("Reset Code fill(): " + programme.join());
+      document.writeln("<br>");
+      programme.fill("JAVA", 2);
+
+      document.writeln("Reset Code fill(): " + programme.join());
+
+      //from()
+      document.writeln("<br>");
+
+      var fromArray = Array.from("Programme");
+      document.writeln("From Array(): " + fromArray);
+    </script>
+  </body>
+</html>
