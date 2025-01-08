@@ -15,7 +15,19 @@
 const object1 = {
     a:'Something',
     b: 39,
-}
-for(const [Key, value] of Object.entries(object1)){
+};
+for(const [key, value] of Object.entries(object1)){
     console.log(`${key}: ${value}`);
 }
+
+
+
+const object2 = {
+    a: 'Domestring',
+    b: 42,
+  };
+  
+  for (const [key, value] of Object.entries(object2)) {
+    console.log(`${key}: ${value}`);
+  }
+  
