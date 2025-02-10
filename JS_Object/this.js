@@ -11,7 +11,6 @@ var Spain ={
 
 Spain.printCountry();
 
-//* Explicit binding
 
 var printPlayerfunction = function(obj){
     obj.printPlayer = function(){
@@ -37,6 +36,22 @@ printPlayerfunction(Leo);
 
 Ronaldo.printPlayer()
 Leo.printPlayer()
+
+var Person = function(name,age){
+    return{
+        name:name,
+        age:age,
+        country:country,
+        printId: function () {
+            console.log(this.name)
+        },
+    };
+};
+
+var Musa = Person("Musa", 38);
+Musa.printId();
+//* Explicit binding
+
 //* New binding
 //* Window binding
 
