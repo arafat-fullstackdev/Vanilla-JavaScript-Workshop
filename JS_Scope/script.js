@@ -20,7 +20,7 @@ let m =22;
 function myFun2(){
     // modify part
     m =44;
-    console.log(m);
+    //console.log(m);
 }
 myFun2();
 //? const
@@ -29,6 +29,20 @@ function myFun3(){
         // modify part
         //n=55;
 
-    console.log(n);
+    //console.log(n);
 }
 myFun3();
+
+//*Boolean
+
+if(true){
+    var variable = "This is Var";
+    console.log(variable);
+
+}
+
+
+if(true){
+    let varLet= "This is Let!";
+    console.log(varLet);
+}
