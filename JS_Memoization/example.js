@@ -11,6 +11,7 @@ const memo = (func) => {
   let cashe = {};  // it is closer who save result
 
   return function (x) {
+    console.log(cashe);
     if(cashe[x]){
         console.log('result from cashe');
         return cashe[x];
