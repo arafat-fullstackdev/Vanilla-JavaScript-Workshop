@@ -37,5 +37,83 @@
 */
 
 //Determine Representation
+/* 
+ [
+  {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+ {
+ name: "Dimitri Farabi"
+ id: 023,
+ email: "dimitriyahao@yahoo.com",
+ password: "Ft45kOl",
+ phone: "87009834",
+ dob: "24 Nov"
+ },
+
+ ]
+ 
+*/
 //Single data Determine Representation
 //JSON view
