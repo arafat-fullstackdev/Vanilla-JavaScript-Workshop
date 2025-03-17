@@ -44,7 +44,13 @@
   ],
   "cSpell.words": [
     "Aljazeera",
-    "productcart",
-    "এলিমেন্টের"
-  ]
+//<<<<<<< DOM
+   // "productcart"
+  //],
+  //"liveServer.settings.port": 5501
+//=======
+  //  "productcart",
+   // "এলিমেন্টের"
+  //]//
+//>>>>>>>// main
 }
