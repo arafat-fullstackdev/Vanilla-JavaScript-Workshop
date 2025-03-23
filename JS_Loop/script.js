@@ -1,3 +1,4 @@
+
 /* for(Initial,Condition,Increment)
 */
 // for(let i =0; i<6;i++){
@@ -33,3 +34,6 @@ console.log(Math.floor(Math.random()*10))
 let otp='';
 for(let  i =0; i<4; otp=otp+ Math.floor(Math.random()*10), i++);
 console.log(otp);
+=======
+git 
+
