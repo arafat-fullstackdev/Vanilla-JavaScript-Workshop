@@ -34,6 +34,20 @@ console.log(Math.floor(Math.random()*10))
 let otp='';
 for(let  i =0; i<4; otp=otp+ Math.floor(Math.random()*10), i++);
 console.log(otp);
+<<<<<<< HEAD
+
+//? Ai Loop
+for (let i = 0; i < 5; i++) {
+    if (i === 2) continue;
+    console.log(i);
+  }
+
+  let arr = ["apple", "banana", "cherry"];
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+=======
 =======
 git 
 
+>>>>>>> 36e2e651d5117b323545658934c8cd7504b88621
