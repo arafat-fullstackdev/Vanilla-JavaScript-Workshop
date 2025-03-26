@@ -46,8 +46,16 @@ for (let i = 0; i < 5; i++) {
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
-=======
-=======
-git 
 
->>>>>>> 36e2e651d5117b323545658934c8cd7504b88621
+
+console.log("Final merged version");
+
+//* For each loop
+
+function process(num){
+  console.log(num);
+}
+
+[1,2,3,4].forEach((i)=>{
+  process(i);
+});
