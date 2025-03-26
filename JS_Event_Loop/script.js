@@ -16,3 +16,20 @@ const first = () => {
 };
 
 first();
+
+// While loop
+function shouldIwun(){
+  console.log('I am run!');
+}
+
+let a =0;
+while(shouldIwun()){
+  shouldIwun();
+
+}
+
+let i;
+while(i<10){
+  text =+ 'This is ten' + i;
+  i++;
+}
