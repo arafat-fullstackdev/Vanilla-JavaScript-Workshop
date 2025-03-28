@@ -16,6 +16,7 @@ const first = () => {
 };
 
 first();
+// Event_Loop
 
 // While loop
 function shouldIwun(){
@@ -33,3 +34,4 @@ while(i<10){
   text =+ 'This is ten' + i;
   i++;
 }
+// main
