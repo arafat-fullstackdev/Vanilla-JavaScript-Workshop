@@ -2,26 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="./style.css"
+    /> -->
 
-    <title>JavaScript Event Handler</title>
+    <title>JavaScript Event Handler| Event Bubling & Capturing</title>
+    <style>
+      body{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+      }
+      #parent{
+        border-color: blueviolet;
+        border-style: solid;
+        padding: 15px;
+      }
+      #form{
+        margin: 10px;
+        padding: 10px;
+        border-style: solid;
+
+        border-color: chartreuse;
+      }
+      #button{
+        margin: 10px;
+        padding: 12px;
+        color: tomato;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container">
       <h1>JavaScript HTML event</h1>
       <h1>JavaScript onclick event</h1>
       <h3>Click the button to display the date</h3>
-      <p id="dateof"></p>
+      <p id="dateOf"></p>
 
       <button onclick="DisplayDate()">On Time</button>
+    </div> -->
+
+    <!--- Event Delegation-->
+    <!-- <div class="container">
+      <h1>ইভেন্ট ডেলিগেশন কি?</h1>
+      <h2>
+        একাধিক এলিমেন্টের জন্য একটাই ইভেন্ট লিসেনার রাখা এবং নতুন এলিমেন্ট যোগ
+        করলেও সেই লিসেনার কাজ করে।
+      </h2>
+      <ul id="list">
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>TypeScript</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+      </ul>
+      <button onclick="addElement()" id="newElement">Add New Element</button>
+    </div> -->
+    <!-- plain JS -->
+    <!-- <script src="../DOM/eventDeligation.js"></script> -->
+    <!-- Vanilla JS -->
+    <!-- <script>
+      function DisplayDate() {
+        document.getElementById("dateOf").innerHTML = Date();
+      } -->
+    <!-- </script> -->
+
+    <!-- ?JS Event Bubling and Capturing -->
+
+    <div id="parent" class="Parent">
+      <h1>What is Event Bubling & Capturing?</h1>
+      <form id="form" action="">
+        <button type="button" id="button">Add Event</button>
+      </form>
     </div>
 
-    <!-- Vanilla JS -->
-    <script>
-      function DisplayDate() {
-        document.getElementById("dateof").innerHTML = Date();
-      }
-    </script>
+    <script src="../JS_Event/event_Propagation.js"></script>
   </body>
 </html>
