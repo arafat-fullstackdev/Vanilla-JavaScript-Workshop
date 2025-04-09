@@ -9,6 +9,7 @@ console.log(sum());
 function int(){
     var name = 'JS Closer';
 
+    
     function displayName(){
         console.log(name);
     }
