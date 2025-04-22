@@ -26,4 +26,31 @@ const box_case = document.getElementById('box');
 
      });
 
-b
+     //KeyWord Event
+
+     const input = document.getElementById('input_box');
+     const output = document.getElementById('outPut_box');
+
+       input.addEventListener('keydown', (event) => {
+        console.log('Key Pressed Down!');
+        output.textContent = `You pressed $(event.key)`;
+       });
+
+
+       // Form submit
+
+       const form = document.getElementById('myForm');
+       const inputName = document.getElementById('input_name');
+       const message = document.getElementById('message');
+
+       form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+
+            if(inputName.value.trim() === ''){
+                message.textContent= 'Please enter your name';
+                message.style.color = 'red';
+            }else{
+                message.textContent = 'Welcome ' + inputName.value;
+                message.style.color = 'green';
+            }
+       });
