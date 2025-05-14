@@ -39,3 +39,13 @@ const wrongMap= new Map();
 
      console.log(contact.size);
      console.log(contact.get('Helen'));
+
+
+     //Map Api
+    //  Interface RTCStatsReport{
+    //     readonly maplike<DOMStringList,object>
+        
+    //  }; 
+    interface RTCStatsReport {
+        readonly maplike<DOMString, object>;
+      };
