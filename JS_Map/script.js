@@ -55,5 +55,18 @@ const numberFind = [10,11,13,15,1,62];
 const numberIndex = numberFind.findIndex((IndexN => IndexN >10));
 const numberIndex1 = numberFind.findIndex((IndexN => IndexN >100));
 
-console.log(numberIndex);
-console.log(numberIndex1);
+// console.log(numberIndex);
+// console.log(numberIndex1);
+
+//? object methods
+// hasOwnProperty
+
+const objP ={
+  name : 'Ronaldo',
+  age: 40,
+  country: 'Portugal',
+  city: 'Lisbon'
+}
+
+const newObj = objP.hasOwnProperty('city');
+console.log(newObj);
