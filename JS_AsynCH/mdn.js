@@ -38,3 +38,54 @@ async function getAndLogFruit() {
 }
 
 getAndLogFruit();
+
+//?
+// await
+function simulateDatabaseQuery(query) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const users = [{
+        id: 1,
+        name: "Alice"
+      }, {
+        id: 2,
+        name: "Bob"
+      }, {
+        id: 3,
+        name: "Charlie"
+      }, ];
+
+      if (query === "SELECT * FROM users") {
+        resolve(users);
+      } else if (query === "SELECT name FROM users WHERE id = 2") {
+        const user = users.find(u => u.id === 2);
+        resolve(user ? user.name : null);
+      } else {
+        reject(new Error("Invalid query"));
+      }
+    }, 1000); // Simulate database query delay
+  });
+}
+
+async function performDatabaseOperations() {
+  try {
+    console.log("Executing queries...");
+
+    const allUsers = await simulateDatabaseQuery("SELECT * FROM users");
+    console.log("All users:", allUsers);
+
+    const bobName = await simulateDatabaseQuery("SELECT name FROM users WHERE id = 2");
+    console.log("Name of user with ID 2:", bobName);
+
+    // This will throw an error and be caught by the catch block
+    const invalidResult = await simulateDatabaseQuery("DELETE FROM users");
+    console.log("This should not be logged:", invalidResult);
+
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+  } finally {
+    console.log("Database operations complete.");
+  }
+}
+
+performDatabaseOperations();
