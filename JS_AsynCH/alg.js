@@ -21,3 +21,27 @@ function binarySearch(arr, target){
     }
     return -1
 }
+
+// --- Example Usage ---
+
+const sortedNumbers = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91];
+
+console.log(`Searching for 12 in [${sortedNumbers}]`);
+let index1 = binarySearch(sortedNumbers, 12);
+console.log(`Index of 12: ${index1} (Expected: 3)`); // Expected output: 3
+
+console.log(`\nSearching for 23 in [${sortedNumbers}]`);
+let index2 = binarySearch(sortedNumbers, 23);
+console.log(`Index of 23: ${index2} (Expected: 5)`); // Expected output: 5
+
+console.log(`\nSearching for 7 in [${sortedNumbers}]`);
+let index3 = binarySearch(sortedNumbers, 7);
+console.log(`Index of 7: ${index3} (Expected: -1)`); // Expected output: -1 (not found)
+
+console.log(`\nSearching for 91 in [${sortedNumbers}]`);
+let index4 = binarySearch(sortedNumbers, 91);
+console.log(`Index of 91: ${index4} (Expected: 9)`); // Expected output: 9
+
+console.log(`\nSearching for 2 in [${sortedNumbers}]`);
+let index5 = binarySearch(sortedNumbers, 2);
+console.log(`Index of 2: ${index5} (Expected: 0)`); // Expected output: 0
