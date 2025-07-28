@@ -45,3 +45,17 @@ console.log(`Index of 91: ${index4} (Expected: 9)`); // Expected output: 9
 console.log(`\nSearching for 2 in [${sortedNumbers}]`);
 let index5 = binarySearch(sortedNumbers, 2);
 console.log(`Index of 2: ${index5} (Expected: 0)`); // Expected output: 0
+// gemni
+// A function that returns a Promise which resolves after a delay
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function greet() {
+  console.log("Hello...");
+  await delay(2000); // Wait for 2 seconds
+  console.log("...World!");
+}
+
+greet();
+console.log("This will print first, demonstrating non-blocking behavior.");
