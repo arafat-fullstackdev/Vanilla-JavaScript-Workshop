@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./support.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>JS Event</title>
 </head>
 <body>
-    <h1>Date of Today</h1>
+    <!-- <h1>Date of Today</h1>
     <button onclick="codeToDate()">Time is </button>
-    <p id="code"></p>
+    <p id="code"></p> -->
+    <div>
+        <H1>Hello JS Event</H1>
+        <button onclick="console.log('Button was clicked'); alert('Hello!')">Clicked</button>
+        <!-- //<button id="button_dbl" ondblclick="console.log('Button was clicked')">Click me double</button> -->
 
-    <script>
+        <button id="button_dbl" ondblclick="document.getElementById('double_click_result').innerText = 'You double-clicked!'">
+            Click me double
+        </button>
+
+        <!-- MouseHover -->
+
+        <div class="mouseHover">
+            <h2>Mouse Hover</h2>
+
+        </div>
+    </div>
+
+    <script src="./run_event.js"></script>
+    <!-- <script>
         function codeToDate(){
             document.getElementById('code').innerHTML= Date();
             function mesAge(){
@@ -30,7 +48,7 @@
     function mesAge(){
         alert('Hey Learner!');
     }
-</script>
+</script> -->
 
     
 </body>
