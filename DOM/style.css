@@ -1,0 +1,58 @@
+
+        /* Apply a basic reset and set a readable font */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Style the main containers */
+        div {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .code {
+            background-color: #e0f7fa; /* Light cyan */
+            border-left: 5px solid #00bcd4;
+        }
+
+        .para {
+            background-color: #fff3e0; /* Light orange/yellow */
+            border: 1px dashed #ff9800;
+        }
+        
+        /* Style the heading */
+        .head {
+            color: #3f51b5; /* Indigo */
+            border-bottom: 2px solid #3f51b5;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* Style the paragraph text */
+        .para p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Style the list container and items */
+        .list {
+            background-color: #e8f5e9; /* Light green */
+            padding-left: 30px; /* Add space for list markers */
+            /* Change the list to an unordered list (ul) for proper structure, 
+               but for now, styling the li elements inside the div.list */
+        }
+        
+        .list li {
+            list-style-type: disc; /* Use standard disc for li */
+            margin-left: 20px;
+            padding: 5px 0;
+            color: #4caf50; /* Green */
+        }
+        
+        /* Note: For better HTML structure, the <li> elements should be inside a <ul> or <ol> tag. */
+    
