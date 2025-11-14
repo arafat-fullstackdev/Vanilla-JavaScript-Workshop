@@ -24,5 +24,14 @@ let hederElement = document.getElementById('header');
 // console.log(hederElement.innerText); // Browser final output
 // console.log(hederElement.textContent);// Editor final output
 // console.log(hederElement.innerHTML);// Editor final output
-console.dir(hederElement);
-hederElement.style.color= 'green';
+// console.dir(hederElement);
+// hederElement.style.color= 'green';
+// hederElement.style.fontSize= '2rem';
+//console.dir(document)
+
+let classElement = document.getElementsByClassName('list');
+//console.log(classElement)
+
+for(let i =0; i<classElement.length; i++){
+    classElement[i].style.color = 'blue';
+}
