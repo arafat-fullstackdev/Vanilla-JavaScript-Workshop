@@ -1,24 +1,24 @@
-let books = ["Hobbit","Node JS","Express"];
+let books = ["Hobbit", "Node JS", "Express"];
 //books.pop();
 
 //books.shift()
-books.unshift("MERN stack")
+books.unshift("MERN stack");
 //console.log(books)
 
 //? Concat
 
-const color1 = ["red","blue"];
-const color2 = ["green","yellow"];
+const color1 = ["red", "blue"];
+const color2 = ["green", "yellow"];
 
 const allColor = color1.concat(color2);
 //console.log(allColor)
 
 //* Acces obj prop
-let person ={
-    name: "TinTin",
-    role: "Developer",
-    salary: '5k'
-}
+let person = {
+  name: "TinTin",
+  role: "Developer",
+  salary: "5k",
+};
 person["hobby"] = "Coding";
 
 const personBio = person.name;
@@ -31,11 +31,11 @@ const personKeys = Object.keys(person);
 
 //* object values
 
-const car={
-    name: "Honda",
-    brand: "Accord",
-    year: 2025,
-}
+const car = {
+  name: "Honda",
+  brand: "Accord",
+  year: 2025,
+};
 const carObject = Object.values(car);
 //console.log(carObject);
 
@@ -45,9 +45,9 @@ const hasProperty = car.hasOwnProperty("brand");
 
 //? Object assign
 
-const targetObj = {name: "Captain Bon"};
-const sourceObj = {country: "marse23"};
-const result = Object.assign(targetObj,sourceObj);
+const targetObj = { name: "Captain Bon" };
+const sourceObj = { country: "marse23" };
+const result = Object.assign(targetObj, sourceObj);
 //console.log(result)
 // Object.assign(EventTarget, source)
 
@@ -59,21 +59,21 @@ const result = Object.assign(targetObj,sourceObj);
 //console.log(car)
 
 // modify
-car.make="Nissian";
+car.make = "Nissian";
 //console.log(car)
 
 //? Nesting Obj
 
-const developer={
-    role: "FullStack",
-    stack: 'MERN',
-    learningP: "Udemy",
-    engineering:{
-        role: 'Logic Building',
-        stack: "Fullstack",
-        learningP: 'Techno'
-    }
-}
+const developer = {
+  role: "FullStack",
+  stack: "MERN",
+  learningP: "Udemy",
+  engineering: {
+    role: "Logic Building",
+    stack: "Fullstack",
+    learningP: "Techno",
+  },
+};
 
 //console.log(developer);
 
@@ -82,108 +82,107 @@ const userRole = developer.engineering;
 //console.log(userRole)
 
 //* Object an Array
-const userProfile= [
-    {
-        name: "Bob",
-        stack: 'MERN',
-        role: 'Developer'
-        
-    },
-    {
-        name: 'Alison',
-        stack: 'Lamp',
-        role: 'engineer'
-    },
-    {
-        name: 'Hololo',
-        stack: 'QE',
-        role: 'Q'
-    }]
+const userProfile = [
+  {
+    name: "Bob",
+    stack: "MERN",
+    role: "Developer",
+  },
+  {
+    name: "Alison",
+    stack: "Lamp",
+    role: "engineer",
+  },
+  {
+    name: "Hololo",
+    stack: "QE",
+    role: "Q",
+  },
+];
 //console.log(userProfile)
 let firstProfile = userProfile[0];
 //console.log(firstProfile)
 //!Add object by push method
-userProfile.push({name: "Deny", stack: "Python", role: 'Backend'});
+userProfile.push({ name: "Deny", stack: "Python", role: "Backend" });
 
-//! modify 
-const modifyData= userProfile[0].name= 'Bon';
+//! modify
+const modifyData = (userProfile[0].name = "Bon");
 //console.log(userProfile)
 
 //? Array transformation
-const arrayL = ['1','2','3','4'];
-arrayL.forEach(function(n){
-    let double = n *2;
+const arrayL = ["1", "2", "3", "4"];
+arrayL.forEach(function (n) {
+  let double = n * 2;
   //console.log(double);
-})
+});
 
 const products = [
-    {name: 'laptop', stock: 4, price: 2000},
-    {name: 'desktop', stock: 14,  price:2300},
-    {name: 'tablet', stock: 10,  price: 2200},
+  { name: "laptop", stock: 4, price: 2000 },
+  { name: "desktop", stock: 14, price: 2300 },
+  { name: "tablet", stock: 10, price: 2200 },
 ];
 
 // product.forEach((seperateP)=>{
 //    // console.log(`Product Update: ${seperateP.name} and ${seperateP.stock}`);
 // })
- const discountprice= products.map((product)=>{
-    return{
-       name: product.name,
-       stock: product.stock,
-       price: product.price * 0.9
-    }
-})
+const discountPrice = products.map((product) => {
+  return {
+    name: product.name,
+    stock: product.stock,
+    price: product.price * 0.9,
+  };
+});
 
-//console.log(discountprice)
+//console.log(discountPrice)
 
 //! Array with map()
-let coder =['JS','C','C++','Java','Python'];
+let coder = ["JS", "C", "C++", "Java", "Python"];
 
-coder.map( function (code){
-//console.log(code);
-})
+coder.map(function (code) {
+  //console.log(code);
+});
 
-const numberArray = [2,4,6,8];
+const numberArray = [2, 4, 6, 8];
 
-const doubleElements = numberArray.map(function (num){
+const doubleElements = numberArray.map(function (num) {
   //console.log(num)
-  return num *3;
-})
+  return num * 3;
+});
 
 //console.log(doubleElements)
 
 //! reduce function
 
-let number1 = [1,2,3,4,5,6];
+let number1 = [1, 2, 3, 4, 5, 6];
 
-const totalNum= number1.reduce(function(accumulator, currentValue){
-//   console.log('acc',accumulator);
-//   console.log('value', currentValue)
+const totalNum = number1.reduce(function (accumulator, currentValue) {
+  //   console.log('acc',accumulator);
+  //   console.log('value', currentValue)
 
-return accumulator +currentValue;
-},0)
+  return accumulator + currentValue;
+}, 0);
 
 //console.log(totalNum)
 
 const products2 = [
-    {name: 'laptop', stock: 4, price: 2000, isStock: false},
-    {name: 'desktop', stock: 14,  price:2300, sStock:true},
-    {name: 'tablet', stock: 10,  price: 2200, sStock:true},
+  { name: "laptop", stock: 4, price: 2000, isStock: false },
+  { name: "desktop", stock: 14, price: 2300, sStock: true },
+  { name: "tablet", stock: 10, price: 2200, sStock: true },
 ];
 
- const totalValue= products2.reduce(function(acc, product){
-    // console.log(acc);
-    // console.log(curr);
+const totalValue = products2.reduce(function (acc, product) {
+  // console.log(acc);
+  // console.log(curr);
 
-    return acc + product.stock + product.price
-
-},0)
+  return acc + product.stock + product.price;
+}, 0);
 
 //console.log(totalValue)
 
 //? find()
-let number3 =  [5,10,20,25];
-const findValue = number3.find(function (num){
-    return num> 10;
-})
+let number3 = [5, 10, 20, 25];
+const findValue = number3.find(function (num) {
+  return num > 10;
+});
 
-console.log(findValue)
+console.log(findValue);
