@@ -5,18 +5,26 @@
 // for(value of arryIt){
 //     console.log(value);
 // } 
-let obj={
-     data : ['1','2','3'],
-     [Symbol.iterator](){
-        let i =0;
-        return{
-            next: ()=>({
-                value: this.data[i],
-                done: i++ >= this.data.length
-            })
-        };
+// let obj={
+//      data : ['1','2','3'],
+//      [Symbol.iterator](){
+//         let i =0;
+//         return{
+//             next: ()=>({
+//                 value: this.data[i],
+//                 done: i++ >= this.data.length
+//             })
+//         };
 
-     }
-};
-for(let n of obj)
-    console.log(n)
+//      }
+// };
+// for(let n of obj)
+//     console.log(n)
+
+//? Iterable
+const letters = new Set(["c","j","p"]);
+let res="";
+for(let x of letters){
+res += x
+}
+console.log(x);
