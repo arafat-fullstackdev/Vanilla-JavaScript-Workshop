@@ -14,3 +14,11 @@ checkNumber.then((message)=> console.log(message))
 .catch((error)=> console.log(error));
 
 checkNumber();
+let checkNumber = ((resolve,reject)=>{
+  let number = 6;
+  if(number % 2 === 0) resolve("The value is even");
+  else reject("the value is odd")
+});
+
+checkNumber.then((message)=> console.log(message))
+.catch((error)=> console.log(error));
