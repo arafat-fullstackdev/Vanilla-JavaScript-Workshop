@@ -85,11 +85,33 @@
 
 //?String formate
 
-function formatString(str1,str2){
-  let upperString= str1.toUpperCase();
-  let lowerString= str2.toLowerCase();
-  let combined= upperString + " " + lowerString;
-  return combined;
+// function formatString(str1,str2){
+//   let upperString= str1.toUpperCase();
+//   let lowerString= str2.toLowerCase();
+//   let combined= upperString + " " + lowerString;
+//   return combined;
+// }
+// let modify = formatString("Express", "JS");
+// console.log(modify)
+
+//? Calculate BMI
+
+const bmiCalculate=(weight,height)=>{
+   let bmi = weight/ (height * height);
+  //  console.log(bmi);
+  let status;
+
+  if(bmi <18.5){
+    status = 'UnderWeight'
+  }else if(bmi <24.5){
+    status = 'Normal Weight'
+  }else if(bmi <29.5){
+    status = 'Over Weight'
+  }else{
+    status= 'Equal'
+  }
+  return status;
 }
-let modify = formatString("Express", "JS");
-console.log(modify)
+
+const bmiRes= bmiCalculate(68,1.67);
+console.log(bmiRes)
