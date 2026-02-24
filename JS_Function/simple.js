@@ -96,22 +96,57 @@
 
 //? Calculate BMI
 
-const bmiCalculate=(weight,height)=>{
-   let bmi = weight/ (height * height);
-  //  console.log(bmi);
-  let status;
+// const bmiCalculate=(weight,height)=>{
+//    let bmi = weight/ (height * height);
+//   //  console.log(bmi);
+//   let status;
 
-  if(bmi <18.5){
-    status = 'UnderWeight'
-  }else if(bmi <24.5){
-    status = 'Normal Weight'
-  }else if(bmi <29.5){
-    status = 'Over Weight'
-  }else{
-    status= 'Equal'
-  }
-  return status;
-}
+//   if(bmi <18.5){
+//     status = 'UnderWeight'
+//   }else if(bmi <24.5){
+//     status = 'Normal Weight'
+//   }else if(bmi <29.5){
+//     status = 'Over Weight'
+//   }else{
+//     status= 'Equal'
+//   }
+//   return status;
+// }
 
-const bmiRes= bmiCalculate(68,1.67);
-console.log(bmiRes)
+// const bmiRes= bmiCalculate(68,1.67);
+// console.log(bmiRes)
+  // function studentGradeMarks(totalMarks,obtainMarks,classPassed){
+  //   let passedCriteria = totalMarks * 0.5 //50%
+  //   let expetionCriteria = totalMarks * 0.8 //80%
+  //   let hasPassed = obtainMarks>= passedCriteria;
+  //   let expetionPassed = obtainMarks>= expetionCriteria;
+  //   let isAverage = obtainMarks> classPassed;
+
+  // return{
+  //   hasPassed,
+  //   expetionPassed,
+  //   isAverage
+  // }
+  // }
+
+  // const result2= studentGradeMarks(600,520,450);
+  // console.log(result2);
+
+  // * Dynamic Color
+  let title=document.querySelector(".title");
+  let colorChange= document.querySelector(".btn_1");
+  let textChange= document.querySelector(".btn_2");
+  let reset= document.querySelector(".reset");
+  let bodyEl= document.querySelector("body");
+
+colorChange.addEventListener('click',function(){
+  bodyEl.style.backgroundColor="green";
+})
+textChange.addEventListener('click',()=>{
+  title.style.fontSize='2rem'
+})
+
+reset.addEventListener('click',function(){
+  bodyEl.style.backgroundColor="";
+  title.style.fontSize="10px"
+})
