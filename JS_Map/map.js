@@ -1,51 +1,22 @@
-const mpi = new Map();
+// // set and new mapCreate a new Map and add elements with Map.set()
+// Passing an existing Array to the new Map() constructor
 
-mpi.set('a', 2);
-mpi.set('b', 3);
-mpi.set('c', 4);
-mpi.set('d', 5);
+const fruits = new Map();
 
-console.log(mpi.get('a')); //2
-mpi.set('a', 22);
-console.log(mpi.get('a'))//22
-console.log(mpi.size);
+//set map value
+fruits.set('apple',200);
+fruits.set('banna',250);
+fruits.set('cucumber',100);
+// console.log(fruits)
 
-mpi.delete('d');
-console.log(mpi.size);//3
-
-// Map array
-
-const wrongMap= new Map();
-    wrongMap['Brazil'] = 'Belize';
-    wrongMap['Bzil'] = 'Belize2';
-    console.log(wrongMap);
-
-    const contact = new Map();
-
-     contact.set('Helen', {
-        phone: '123-456-768',
-        country: 'Cypress',
-     });
-
-     contact.set('Midilton', {
-        phone: '435-234-768',
-        country: 'Colombia',
-     });
-
-     contact.set('Jack');
-     contact.has('Jacky');
-
-     contact.delete('Jack');
-
-     console.log(contact.size);
-     console.log(contact.get('Helen'));
-
-
-     //Map Api
-    //  Interface RTCStatsReport{
-    //     readonly maplike<DOMStringList,object>
-        
-    //  }; 
-    interface RTCStatsReport {
-        readonly maplike<DOMString, object>;
-      };
+const basket = new Map([
+    ['Orange',200],
+    ['Mango',270],
+    ['Lemon',100],
+])
+//add map value
+basket.set('Bitroot',340)
+basket.set('Orange',160)// change value
+// console.log(basket)
+ const get = basket.get('Lemon');  // get value
+ console.log(basket instanceof Map)

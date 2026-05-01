@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convert</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Finnex Currency Converter</h1>
+        <p class="app_description">
+            Real-time currency conversion at your fingertips.
+        </p>
+
+        <div class="toggle_container">
+            <button class="toggle_btn active" data-mode="convert">Convert</button>
+            <button class="toggle_btn " data-mode="exchange">Exchange Rates</button>
+        </div>
+
+        <div class="convert_card">
+            <div class="input_group">
+                <label for="amount">Amount</label>
+                <input type="number"
+                id="amount"
+                placeholder="Enter amount"
+                required/>
+            </div>
+            <div class="input_group">
+                <label for="from_currency">Form</label>
+                <select id="from_currency" required>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                </select>
+            </div>
+
+             <div class="input_group">
+                <label for="to_currency">To Currency</label>
+                <select id="to_currency" required>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="JPY">JPY - Japanese Yen</option>
+                </select>
+            </div>
+
+            <button id="get_rates_btn">
+                <i data-feather="list" class="currency_icon">
+                    Get Exchange Rates
+                </i>
+            </button>
+
+            <div id="exchange-rates"></div>
+
+            <footer>Built by Finnex Fimancial</footer>
+        </div>
+    </div>
+</body>
+</html>
