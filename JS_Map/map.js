@@ -19,4 +19,7 @@ basket.set('Bitroot',340)
 basket.set('Orange',160)// change value
 // console.log(basket)
  const get = basket.get('Lemon');  // get value
+ //console.log(basket instanceof Map)
+
+ // Methods in Map()
  console.log(basket instanceof Map)
