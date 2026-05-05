@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object model</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <img src="https://raw.githubusercontent.com/learnwithsumit/dom-manipulation/master/logo.png" alt="Learn with Sumit Logo" class="logo">
+            <h1>TO-DO APP</h1>
+        </header>
+
+        <!-- Add Task Section -->
+        <section class="add-task-container">
+            <form id="new-task-form">
+                <label for="new-task">Add New Task</label>
+                <input type="text" id="new-task">
+                <button type="submit" id="addTask">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Tasks Lists Section -->
+        <div class="tasks-wrapper">
+            
+            <!-- Incomplete Tasks -->
+            <section class="task-list-container">
+                <h2>INCOMPLETE TASKS</h2>
+                <ul id="items">
+                    <li class="item">
+                        <input type="checkbox">
+                        <label>Task Name</label>
+                        <button class="update">Update</button>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox">
+                        <label>Task Name</label>
+                        <button class="update">Update</button>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Completed Tasks -->
+            <section class="task-list-container">
+                <h2>COMPLETED TASKS</h2>
+                <ul id="completed-tasks">
+                    <li class="item">
+                        <label>Task Name</label>
+                        <button class="delete">Delete</button>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="./task.js"></script>
+</body>
+</html>

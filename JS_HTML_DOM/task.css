@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c8e6c9; /* Light green background */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.add-task-container {
+    background: white;
+    padding: 20px;
+    border: 1px solid #999;
+    margin-bottom: 40px;
+}
+
+#new-task-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#new-task-form label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#new-task {
+    padding: 5px;
+    border: 1px solid #777;
+    width: 250px;
+}
+
+#addTask {
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #777;
+}
+
+/* Lists Layout */
+.tasks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.task-list-container {
+    background: white;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: left;
+    min-height: 200px;
+}
+
+.task-list-container h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.item label {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* Buttons */
+.update {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.update:hover, .delete:hover {
+    opacity: 0.8;
+}
