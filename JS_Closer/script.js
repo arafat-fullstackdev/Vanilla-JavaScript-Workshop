@@ -9,7 +9,10 @@ console.log(sum());
 function int(){
     var name = 'JS Closer';
 
+// <<<<<<< Map
     
+// =======
+// >>>>>>> main
     function displayName(){
         console.log(name);
     }

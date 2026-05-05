@@ -22,3 +22,4 @@ basket.set('Orange',160)// change value
  //console.log(basket instanceof Map)
 
  // Methods in Map()
+ console.log(basket instanceof Map)

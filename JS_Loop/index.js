@@ -24,4 +24,6 @@ for(; ; g++){
     }else{
         break;
     }
-}
+} 
+//?  forOf loop
+const myArr = [1,2,3,4,5,6];
